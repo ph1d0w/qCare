@@ -29,17 +29,12 @@ html
     top: 0px;
 }
 
-.fab, .fas
+.fabC, .fasC
 {
     color: #d58388;
 }
 
 .navbarElements
-{
-    color: white !important;
-}
-
-.fasUp
 {
     color: white !important;
 }
@@ -62,6 +57,7 @@ html
     position: fixed !important; 
     bottom: 0px !important; 
     right: 0px !important;
+    color: white !important;
 }
 
 .botonUp
@@ -69,11 +65,21 @@ html
     position: fixed !important; 
     bottom: 80px !important; 
     right: 0px !important;
+    color: white !important;
 }
 
 .indiceLateral
 {
     color: #d58388 !important;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.indiceLateral::before
+{
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f0da";
 }
 
 .btn-circle.btn-xl 
@@ -84,6 +90,12 @@ html
     border-radius: 35px;
     font-size: 24px;
     line-height: 1.33;
+}
+
+.btn-danger
+{
+    background: #d58388;
+    border: none !important;
 }
 
 .btn-circle 
