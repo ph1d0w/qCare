@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>qCare</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="basic.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+        crossorigin="anonymous">
+    <link rel="icon" type="image/png" href="images/favicon.png" />
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">qCare</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="explora.html">Explora</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Perfil</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <!--<ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <button class="btn btn-outline-success my-2 my-sm-0 mr-sm-5 alert alert-success" type="submit"
+                            rol="alert">Añadir pregunta</button>
+                    </li>
+                </ul>-->
+                <input class="form-control mr-sm-2" type="search" placeholder="Buscar..." aria-label="Buscar">
+                <button class="btn btn-outline-info my-2 my-sm-0" type="submit">Buscar</button>
+            </form>
+        </div>
+    </nav>
+    <div class="row">
+        <div class="col-sm-3">
+        </div>
+        <div class="col-sm-6">
+            <div class="botonAdd pr-4 pb-4"><button type="button" class="btn btn-danger btn-circle btn-xl"><i class="fa fa-plus"></i></button></div>
+            <h1 class="mt-3">Inicio</h1>
+            <div class="mt-5">
+                <h3>Dolores de cabeza</h3>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="card mt-2">
+                        <div class="card-header">
+                            <div class="row">
+                                <div class="col-sm-1">
+                                    <img src="images/avatar-3.png" alt="Avatar" class="avatar">
+                                </div>
+                                <div class="col-sm-11">
+                                    Me duele mucho la cabeza desde hace varios días... No sé qué hacer ya, cada vez va
+                                    a más y mis hijos no ayudan a reducir dicho dolor. ¡¡AYUDA POR FAVOR!!
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <blockquote class="blockquote mb-0">
+                                <p>El dolor de cabeza es muy común, pero puede ser aliviado sin medicamentos a través
+                                    de medidas fáciles como colocarse compresas frías en la cabeza, especialmente si la
+                                    causa del dolor de cabeza es estrés, mala alimentación, cansancio o ansiedad.</p>
+                                <footer class="blockquote-footer"><cite title="Source Title">Dolores Fuertes de Barriga</cite></footer>
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col text-center">
+                    <button type="button" class="btn btn-outline-primary btnVerMas">Ver más...</button>
+                </div>
+            </div>
+            <!--<div class="row">
+                <div class="col">
+                    <div class="card mt-4">
+                        <div class="card-header">
+                            <div class="row">
+                                <div class="col-sm-1">
+                                    <img src="images/avatar-1.png" alt="Avatar" class="avatar">
+                                </div>
+                                <div class="col-sm-11">
+                                    Me duele mucho la cabeza desde hace varios días... No sé qué hacer ya, cada vez va
+                                    a más y mis hijos no ayudan a reducir dicho dolor. ¡¡AYUDA POR FAVOR!!
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <blockquote class="blockquote mb-0">
+                                <p>El dolor de cabeza es muy común, pero puede ser aliviado sin medicamentos a través
+                                    de medidas fáciles como colocarse compresas frías en la cabeza, especialmente si la
+                                    causa del dolor de cabeza es estrés, mala alimentación, cansancio o ansiedad.</p>
+                                <footer class="blockquote-footer"><cite title="Source Title">Dolores Fuertes de Barriga</cite></footer>
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="card mt-4">
+                        <div class="card-header">
+                            <div class="row">
+                                <div class="col-sm-1">
+                                    <img src="images/avatar.png" alt="Avatar" class="avatar">
+                                </div>
+                                <div class="col-sm-11">
+                                    Me duele mucho la cabeza desde hace varios días... No sé qué hacer ya, cada vez va
+                                    a más y mis hijos no ayudan a reducir dicho dolor. ¡¡AYUDA POR FAVOR!!
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <blockquote class="blockquote mb-0">
+                                <p>El dolor de cabeza es muy común, pero puede ser aliviado sin medicamentos a través
+                                    de medidas fáciles como colocarse compresas frías en la cabeza, especialmente si la
+                                    causa del dolor de cabeza es estrés, mala alimentación, cansancio o ansiedad.</p>
+                                <footer class="blockquote-footer"><cite title="Source Title">Dolores Fuertes de Barriga</cite></footer>
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+            </div>-->
+            <div class="mt-5">
+                <h3>Dolores de intestino</h3>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="card mt-2">
+                        <div class="card-header">
+                            <div class="row">
+                                <div class="col-sm-1">
+                                    <img src="images/avatar.png" alt="Avatar" class="avatar">
+                                </div>
+                                <div class="col-sm-11">
+                                    El otro día comí una fabada asturiana y sigo teniendo muchísimos dolores y no sé
+                                    que puedo tomarme para reducir todos estos gases. Mi familia no sabe qué hacer
+                                    conmigo, mi mujer se ha ido a dormir al sofá porque por las noches no aguanta a mi
+                                    lado.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <blockquote class="blockquote mb-0">
+                                <p>Un excelente remedio casero para eliminar los gases intestinales es tomar un té de
+                                    hierbas preparado recientemente como por ejemplo, té de anís, genciana, hojas de
+                                    aguacate o cardamomo.</p>
+
+                                <p>Estos té son indicados porque poseen propiedades antiespasmódicas que facilitan el
+                                    tránsito intestinal, aliviando el dolor y disminuyendo naturalmente la producción
+                                    de gases. Además de la ingestión de estos tés, también es importante adoptar una
+                                    dieta donde se eviten alimentos que favorezcan la formación de gases como el
+                                    brócoli o los frijoles. Conozca cuáles son los alimentos que producen gases. </p>
+                                <footer class="blockquote-footer"><cite title="Source Title">José Ramón Sánchez Martín</cite></footer>
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col text-center">
+                    <button type="button" class="btn btn-outline-primary btnVerMas">Ver más...</button>
+                </div>
+            </div>
+            <div class="mt-5">
+                <h3>Dolores de rodilla</h3>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="card mt-2">
+                        <div class="card-header">
+                            <div class="row">
+                                <div class="col-sm-1">
+                                    <img src="images/avatar.png" alt="Avatar" class="avatar">
+                                </div>
+                                <div class="col-sm-11">
+                                    ¿Por qué me duelen las rodillas?
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <blockquote class="blockquote mb-0">
+                                <p>Evitar estar arrodillado Cualquier actividad (como la jardinería) que requiera estar
+                                    de rodilla a menudo, debe ser evitada, ya que, de lo contrario, el dolor no se
+                                    reducirá.</p>
+
+                                <p>Bajar de peso. En caso de estar pasado de peso, es necesario adelgazar. Esta acción
+                                    ayudará a quitarle presión a las rótulas de las rodillas.</p>
+
+                                <p>Usar zapatos bajos y cómodos. Los tacones altos aumentan la presión en las
+                                    rodillas. Por ello, es necesario usar calzados de tacón bajo o sin tacón.</p>
+
+                                <p>Cambiar de posición. Es importante comprender que estar un buen rato sentado puede
+                                    ejercer mucha presión en las rodillas. Se debe cambiar de posición a intervalos
+                                    después de cada 45 minutos... <a herf="#" class="card-link">Seguir leyendo...</a></p>
+                                <footer class="blockquote-footer"><cite title="Source Title">Dolores Fuertes de Barriga</cite></footer>
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col text-center">
+                    <button type="button" class="btn btn-outline-primary btnVerMas">Ver más...</button>
+                </div>
+            </div>
+            <div class="mt-5"></div>
+        </div>
+        <div class="col-sm-3">
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>
