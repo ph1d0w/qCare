@@ -114,22 +114,22 @@ html
     color: white;
 }
 
-/* width */
-::-webkit-scrollbar {
+::-webkit-scrollbar
+{
     width: 10px;
 }
 
-/* Track */
-::-webkit-scrollbar-track {
+::-webkit-scrollbar-track
+{
     background: #f1f1f1; 
 }
  
-/* Handle */
-::-webkit-scrollbar-thumb {
+::-webkit-scrollbar-thumb 
+{
     background: #d64048; 
 }
 
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
+::-webkit-scrollbar-thumb:hover
+{
     background: #b01e26; 
 }
