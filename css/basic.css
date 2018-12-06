@@ -70,7 +70,7 @@ html
 
 .indiceLateral
 {
-    color: #d58388 !important;
+    color: #d59d9f !important;
     font-size: 20px;
     font-weight: bold;
 }
@@ -122,7 +122,7 @@ html
 
 ::selection
 {
-    background: #d64048;
+    background: #d59d9f;
     color: white;
 }
 
@@ -138,10 +138,10 @@ html
  
 ::-webkit-scrollbar-thumb 
 {
-    background: #d64048; 
+    background: #d59d9f; 
 }
 
 ::-webkit-scrollbar-thumb:hover
 {
-    background: #b01e26; 
+    background: #be777a; 
 }
