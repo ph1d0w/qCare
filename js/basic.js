@@ -1,5 +1,10 @@
-close = document.getElementById("close");
-close.addEventListener('click', function() {
-  note = document.getElementById("note");
-  note.style.display = 'none';
-}, false);
+$(document).ready(function()
+{
+    $('#notificacion').delay(2000).animate({
+        'marginTop' : "+=580px" 
+    });
+
+    $("#notificacion").fadeIn("slow");
+
+    $("#notificacion").delay(5000).fadeOut("slow");
+});
