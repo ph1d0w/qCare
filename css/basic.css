@@ -185,3 +185,38 @@ a.indiceLateral:hover
 {
     background: #be777a; 
 }
+
+#notificacion 
+{
+    position: fixed;
+    color: rgb(97, 97, 97);
+    top: 80px;
+    left: 75%;
+    right: 20px;
+    background: rgb(148, 226, 163);
+    text-align: center;
+    line-height: 2.7;
+    overflow: hidden; 
+    border-radius: 5px;
+    box-shadow: 0px 5px 20px #b4b4b4;
+}
+
+.animacion
+{
+    position: relative;
+    animation: animatetop 2s;
+}
+
+@keyframes animatetop
+{
+    from
+    {
+        top: -300px;
+        opacity: 0
+    } 
+    to
+    {
+        top: 80px;
+        opacity: 1
+    }
+}

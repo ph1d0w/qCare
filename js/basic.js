@@ -1,6 +1,5 @@
-$('#goTop').on('click', function(e){
-    $("html, body").animate({scrollTop: $("#top").offset().top}, 500);
-});
-$(document).ready(function() {
-    $("#myModal").modal();
-  });
+close = document.getElementById("close");
+close.addEventListener('click', function() {
+  note = document.getElementById("note");
+  note.style.display = 'none';
+}, false);
