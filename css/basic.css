@@ -16,6 +16,34 @@ html
     border-radius: 50%;
 }
 
+.textoVertical
+{
+    writing-mode: vertical-rl;
+    transform: rotate(-180deg);
+    font-size: 30px;
+    margin-top: 24px;
+}
+
+.navbar
+{
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: white !important;
+}
+  
+.main 
+{
+    padding-left: 15px;
+    margin-top: 56px;
+}
+  
+.mainPerfil
+{
+    padding-top: 40px;
+}
+
 .heading
 {
     background: #ccc;
@@ -32,6 +60,11 @@ html
 .fabC, .fasC
 {
     color: #d58388;
+}
+
+.preguntaPerfil
+{
+    border-left: 2px solid #d58388;
 }
 
 .navbarElements
@@ -68,11 +101,18 @@ html
     color: white !important;
 }
 
+
+
 .indiceLateral
 {
     color: #d59d9f !important;
     font-size: 20px;
-    font-weight: bold;
+    text-decoration: none !important;
+}
+
+a.indiceLateral:hover
+{
+    color: #914a4d !important;
 }
 
 .indiceLateral::before
@@ -128,7 +168,7 @@ html
 
 ::-webkit-scrollbar
 {
-    width: 10px;
+    width: 8px;
 }
 
 ::-webkit-scrollbar-track
