@@ -40,7 +40,7 @@
             </div>
             <div class="row">
                 <div class="col">
-                    <div class="card mt-2 preguntaPerfil">
+                    <div class="card mt-2 cabezaBorder">
                         <div class="card-header">
                             <div class="row">
                                 <div class="col-sm-1">
@@ -57,7 +57,7 @@
                                 <p>El dolor de cabeza es muy común, pero puede ser aliviado sin medicamentos a través
                                     de medidas fáciles como colocarse compresas frías en la cabeza, especialmente si la
                                     causa del dolor de cabeza es estrés, mala alimentación, cansancio o ansiedad.</p>
-                                <footer class="blockquote-footer"><cite title="Source Title">Dolores Fuertes de Barriga</cite>
+                                <footer class="blockquote-footer"><cite title="Source Title">Dolores Fuertes de Barriga</cite> 
                                     | 19/07/2018</footer>
                             </blockquote>
                             <div class="text-right mt-3">
@@ -72,7 +72,7 @@
             </div>
             <div class="row divGradient">
                 <div class="col">
-                    <div class="card mt-4 preguntaPerfil">
+                    <div class="card mt-4 cabezaBorder">
                         <div class="card-header">
                             <div class="row">
                                 <div class="col-sm-1">
@@ -114,7 +114,7 @@
             </div>
             <div class="row">
                 <div class="col">
-                    <div class="card mt-2 preguntaPerfil">
+                    <div class="card mt-2 gargantaBorder">
                         <div class="card-header">
                             <div class="row">
                                 <div class="col-sm-1">
@@ -155,7 +155,7 @@
             </div>
             <div class="row divGradient">
                 <div class="col">
-                    <div class="card mt-4 preguntaPerfil">
+                    <div class="card mt-4 gargantaBorder">
                         <div class="card-header">
                             <div class="row">
                                 <div class="col-sm-1">
@@ -202,7 +202,7 @@
             </div>
             <div class="row">
                 <div class="col">
-                    <div class="card mt-2 preguntaPerfil">
+                    <div class="card mt-2 enciasBorder">
                         <div class="card-header">
                             <div class="row">
                                 <div class="col-sm-1">
@@ -259,7 +259,7 @@
             </div>
             <div class="row divGradient">
                 <div class="col">
-                    <div class="card mt-2 preguntaPerfil">
+                    <div class="card mt-2 enciasBorder">
                         <div class="card-header">
                             <div class="row">
                                 <div class="col-sm-1">
@@ -303,7 +303,7 @@
             </div>
             <div class="row">
                 <div class="col">
-                    <div class="card mt-2 preguntaPerfil">
+                    <div class="card mt-2 mandibulaBorder">
                         <div class="card-header">
                             <div class="row">
                                 <div class="col-sm-1">
@@ -344,7 +344,7 @@
             </div>
             <div class="row divGradient">
                 <div class="col">
-                    <div class="card mt-2 preguntaPerfil">
+                    <div class="card mt-2 mandibulaBorder">
                         <div class="card-header">
                             <div class="row">
                                 <div class="col-sm-1">
@@ -399,36 +399,60 @@
             ¡Dolores Fuertes de Barriga ha respondido a tu pregunta!
         </div>
         <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
-            aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLongTitle">Añadir pregunta</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true"></span>
-                        </button>
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="exampleModalLongTitle">Añadir pregunta</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true"></span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div>
+                        <select class="form-control" id="selectTipo" onchange="tiposProblema()">
+                            <option selected disabled>Seleccionar problema...</option>
+                            <option value="1">Dolores</option>
+                            <option value="2">Inflamaciones</option>
+                        </select>
+                        <select class="form-control mt-3" id="dolores" style="display: none">
+                            <option>Cabeza</option>
+                            <option>Barriga</option>
+                            <option>Hombro</option>
+                            <option>Muñeca</option>
+                            <option>Mandíbula</option>
+                            <option>Muelas</option>
+                        </select>
+                        <select class="form-control mt-3" id="inflamaciones" style="display: none">
+                            <option>Garganta</option>
+                            <option>Ganglios</option>
+                            <option>Hígado</option>
+                            <option>Articulaciones</option>
+                            <option>Encías</option>
+                            <option>Dedos</option>
+                        </select>
                     </div>
-                    <div class="modal-body">
-                        <div class="input-group mb-3">
-                            <div class="input-group-prepend">
-                                <span class="input-group-text"><i class="fas fa-question"></i></span>
-                            </div>
-                            <input type="text" class="form-control" placeholder="Pregunta" aria-label="Pregunta">
+                    <div class="input-group mb-3 mt-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text qIcon"><i class="fas fa-question"></i></span>
                         </div>
-                        <div class="input-group">
-                            <div class="input-group-prepend">
-                                <span class="input-group-text"><i class="fas fa-comment"></i></span>
-                            </div>
-                            <textarea class="form-control" placeholder="Explicación del problema" aria-label="Explicación del problema"></textarea>
+                        <input type="text" class="form-control" placeholder="Pregunta" aria-label="Pregunta">
+                    </div>
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text"><i class="fas fa-comment"></i></span>
                         </div>
+                        <textarea class="form-control" min-height="62px" placeholder="Explicación del problema"
+                            aria-label="Explicación del problema"></textarea>
                     </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-                        <button type="button" class="btn btn-primary">Enviar</button>
-                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn btn-primary">Enviar</button>
                 </div>
             </div>
         </div>
+    </div>
         <nav class="navbar navbar-expand-lg navbar-light bg-light divShadow">
             <a class="navbar-brand" href="index.html">qCare</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"

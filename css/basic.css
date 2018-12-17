@@ -64,7 +64,7 @@ html
 
 .preguntaPerfil
 {
-    border-left: 2px solid #d58388;
+    border-left: 3px solid #d58388;
 }
 
 .navbarElements
@@ -80,6 +80,11 @@ html
 .cabeza
 {
     background: #ace8dc;
+}
+
+.cabezaBorder
+{
+    border-left: 3px solid #ace8dc;
 }
 
 .barriga
@@ -102,9 +107,60 @@ html
     background: #faeba6;
 }
 
+.mandibulaBorder
+{
+    border-left: 3px solid #faeba6;
+}
+
 .muelas
 {
     background: #f8c1ba;
+}
+
+.garganta
+{
+    background: #d2d8d8;
+}
+
+.gargantaBorder
+{
+    border-left: 3px solid #d2d8d8;
+}
+
+.ganglios
+{
+    background: #ebbab5;
+}
+
+.higado
+{
+    background: #b5bcc2;
+}
+
+.articulaciones
+{
+    background: #acded5;
+}
+
+.encias
+{
+    background: #d9bde3;
+}
+
+.enciasBorder
+{
+    border-left: 3px solid #d9bde3;
+}
+
+.dedos
+{
+    background: #fcdca9;
+}
+
+.qIcon
+{
+    padding-left: 14px;
+    padding-right: 13px;
 }
 
 .avatarPerf 

@@ -219,15 +219,38 @@
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLongTitle">Añadir pregunta</h5>
+                    <h4 class="modal-title" id="exampleModalLongTitle">Añadir pregunta</h4>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true"></span>
                     </button>
                 </div>
                 <div class="modal-body">
-                    <div class="input-group mb-3">
+                    <div>
+                        <select class="form-control" id="selectTipo" onchange="tiposProblema()">
+                            <option selected disabled>Seleccionar problema...</option>
+                            <option value="1">Dolores</option>
+                            <option value="2">Inflamaciones</option>
+                        </select>
+                        <select class="form-control mt-3" id="dolores" style="display: none">
+                            <option>Cabeza</option>
+                            <option>Barriga</option>
+                            <option>Hombro</option>
+                            <option>Muñeca</option>
+                            <option>Mandíbula</option>
+                            <option>Muelas</option>
+                        </select>
+                        <select class="form-control mt-3" id="inflamaciones" style="display: none">
+                            <option>Garganta</option>
+                            <option>Ganglios</option>
+                            <option>Hígado</option>
+                            <option>Articulaciones</option>
+                            <option>Encías</option>
+                            <option>Dedos</option>
+                        </select>
+                    </div>
+                    <div class="input-group mb-3 mt-3">
                         <div class="input-group-prepend">
-                            <span class="input-group-text"><i class="fas fa-question"></i></span>
+                            <span class="input-group-text qIcon"><i class="fas fa-question"></i></span>
                         </div>
                         <input type="text" class="form-control" placeholder="Pregunta" aria-label="Pregunta">
                     </div>
@@ -235,7 +258,8 @@
                         <div class="input-group-prepend">
                             <span class="input-group-text"><i class="fas fa-comment"></i></span>
                         </div>
-                        <textarea class="form-control" placeholder="Explicación del problema" aria-label="Explicación del problema"></textarea>
+                        <textarea class="form-control" min-height="62px" placeholder="Explicación del problema"
+                            aria-label="Explicación del problema"></textarea>
                     </div>
                 </div>
                 <div class="modal-footer">
