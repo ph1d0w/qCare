@@ -11,8 +11,7 @@ $(document).ready(function()
 
 function tiposProblema()
 {
-    var x = document.getElementById("selectTipo").value;
-    var tipo = parseInt(x);
+    var tipo = parseInt(document.getElementById("selectTipo").value);
     switch(tipo)
     {
         case 1:
